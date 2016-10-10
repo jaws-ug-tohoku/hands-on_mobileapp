@@ -1,0 +1,177 @@
+//================================================
+// コメントアウトすると、これらのimportが必要になります
+//================================================
+
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.AsyncTask;
+
+import com.amazonaws.mobile.AWSMobileClient;
+import com.amazonaws.mobile.content.ContentItem;
+import com.amazonaws.mobile.content.ContentManager;
+import com.amazonaws.mobile.content.ContentProgressListener;
+import com.amazonaws.services.lambda.model.InvocationType;
+import com.amazonaws.services.lambda.model.InvokeRequest;
+import com.amazonaws.services.lambda.model.InvokeResult;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import java.nio.ByteBuffer;
+import java.nio.CharBuffer;
+import java.nio.charset.Charset;
+import java.nio.charset.CharsetDecoder;
+import java.nio.charset.CharsetEncoder;
+
+
+
+//================================================
+// onCreateの前にコピペしてください
+//================================================
+
+    private static final String FUNCTION_NAME_QUESTION4 = "getRandomQuestion4";
+    private static final String REQUEST_PAYLOAD = "{\"category\" : \"all\"}";
+    private static final Charset CHARSET_UTF8 = Charset.forName("UTF-8");
+    private static final CharsetEncoder ENCODER = CHARSET_UTF8.newEncoder();
+    private static final CharsetDecoder DECODER = CHARSET_UTF8.newDecoder();
+
+
+//================================================
+// 最後の方にコピペしてください
+//================================================
+
+    /**
+     * Lambdaを呼び出して問題用データを取得する<br>
+     * 基本、SampleAppからのコピペ
+     */
+    private void invokeFunction() {
+
+        new AsyncTask<Void, Void, InvokeResult>() {
+            @Override
+            protected InvokeResult doInBackground(Void... params) {
+                try {
+                    final ByteBuffer payload =
+                            ENCODER.encode(CharBuffer.wrap(REQUEST_PAYLOAD));
+
+                    final InvokeRequest invokeRequest =
+                            new InvokeRequest()
+                                    .withFunctionName(FUNCTION_NAME_QUESTION4)
+                                    .withInvocationType(InvocationType.RequestResponse)
+                                    .withPayload(payload);
+
+                    final InvokeResult invokeResult =
+                            AWSMobileClient
+                                    .defaultMobileClient()
+                                    .getCloudFunctionClient()
+                                    .invoke(invokeRequest);
+
+                    return invokeResult;
+                } catch (final Exception e) {
+                    Log.e(LOG_TAG, "AWS Lambda invocation failed : " + e.getMessage(), e);
+                    final InvokeResult result = new InvokeResult();
+                    result.setStatusCode(500);
+                    result.setFunctionError(e.getMessage());
+                    return result;
+                }
+            }
+
+            @Override
+            protected void onPostExecute(final InvokeResult invokeResult) {
+
+                try {
+                    final int statusCode = invokeResult.getStatusCode();
+                    final String functionError = invokeResult.getFunctionError();
+                    final String logResult = invokeResult.getLogResult();
+
+                    if (statusCode != 200) {
+                        Log.d(LOG_TAG, invokeResult.getFunctionError());
+                        onErrorOccurred(new Exception(invokeResult.getFunctionError()));
+                    } else {
+                        final ByteBuffer resultPayloadBuffer = invokeResult.getPayload();
+                        final String resultPayload = DECODER.decode(resultPayloadBuffer).toString();
+
+                        String jsonText = resultPayload.substring(1, resultPayload.length() - 1).replace("\\", "");
+                        JSONObject jsonObject = new JSONObject(jsonText);
+
+                        Log.d(LOG_TAG, jsonObject.toString(4));
+
+                        mQuestion = new Question(jsonObject.toString());
+                        loadImageAsync();
+                    }
+
+                    if (functionError != null) {
+                        Log.e(LOG_TAG, "AWS Lambda Function Error: " + functionError);
+                    }
+
+                    if (logResult != null) {
+                        Log.d(LOG_TAG, "AWS Lambda Log Result: " + logResult);
+                    }
+                }
+                catch (final Exception e) {
+                    Log.e(LOG_TAG, "Unable to decode results. " + e.getMessage(), e);
+                }
+            }
+        }.execute();
+    }
+
+    /**
+     * App Content Deliveryから問題用の画像を取得する
+     */
+    private void downloadIconImage() {
+        AWSMobileClient.defaultMobileClient().
+                createDefaultContentManager(new ContentManager.BuilderResultHandler() {
+                    @Override
+                    public void onComplete(final ContentManager contentManager) {
+                        contentManager.getContent(mQuestion.getQuestionItem(0).getFilename(), new ContentProgressListener() {
+                            @Override
+                            public void onSuccess(final ContentItem contentItem) {
+                                // Handle successful action here
+                                try {
+                                    InputStream is = new FileInputStream(contentItem.getFile());
+                                    Bitmap bm = BitmapFactory.decodeStream(is);
+
+                                    iconImageView.setImageBitmap(bm);
+                                    showNewQuestion();
+
+                                } catch (FileNotFoundException e) {
+                                    onErrorOccurred(e);
+                                }
+                            }
+
+                            @Override
+                            public void onProgressUpdate(final String fileName, final boolean isWaiting,
+                                                         final long bytesCurrent, final long bytesTotal) {
+                                // Handle progress update here
+                            }
+
+                            @Override
+                            public void onError(final String fileName, final Exception ex) {
+                                // Handle error case here
+                                onErrorOccurred(ex);
+                            }
+                        });
+                    }
+                });
+    }
+
+    /**
+     * 問題取得中または画像取得中にエラーが起こった時の処理
+     * @param e 発生した例外
+     */
+    private void onErrorOccurred(Exception e) {
+        Log.e(LOG_TAG, "onError", e);
+
+        okOnlyDialog = OkOnlyDialogFragment.newInstance(
+                getString(R.string.dialog_text_load_error_title),
+                getString(R.string.dialog_text_load_error_message),
+                getString(R.string.dialog_btn_ok));
+
+        okOnlyDialog.setDialogListener(new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                nextQuestionOrEnd();
+            }
+        });
+
+        okOnlyDialog.show(getFragmentManager(), "alert");
+    }

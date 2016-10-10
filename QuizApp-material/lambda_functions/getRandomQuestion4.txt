@@ -1,0 +1,41 @@
+'use strict';
+
+console.log('Loading function');
+
+const doc = require('dynamodb-doc');
+const dynamo = new doc.DynamoDB();
+
+exports.handler = (event, context, callback) => {
+    // console.log('Received event:', JSON.stringify(event, null, 2));
+
+    const payload = {"TableName": "jawsugaomori-mobilehub-2130611851-Services"};
+
+    var result = {};
+
+    dynamo.scan(payload, function(err, data) {
+        if (err) {
+            console.error("Unable to scan the table. Error JSON:", JSON.stringify(err, null, 2));
+        } else {
+            //
+            console.log("Scan succeeded.");
+            console.log("count: " + data.Items.length);
+
+            result.count = 4;
+            result.sentence = 'このアイコンが示すサービスは？';
+            result.questions = [];
+
+            // Sort randomly
+            data.Items.sort(function(){
+                return Math.random() - 0.5;
+            });
+
+            result.questions[0] = data.Items[0];
+            result.questions[1] = data.Items[1];
+            result.questions[2] = data.Items[2];
+            result.questions[3] = data.Items[3];
+
+            // console.log(JSON.stringify(result, null, 2));
+            callback(null, JSON.stringify(result));
+        }
+    });
+};

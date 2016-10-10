@@ -1,0 +1,111 @@
+
+{"serviceId":"dp","category":"analytics","label":"Data Pipeline","filename":"icon_aws_data_pipeline.png","description":"AWS Data Pipeline は、定期的な、データ駆動型ワークフロー向けの軽量なオーケストレーションサービスです。","caption":"データ駆動型ワークフローに対するオーケストレーションサービス","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"emr","category":"analytics","label":"EMR","filename":"icon_amazon_emr.png","description":"Amazon Elastic MapReduce を使用すると、ウェブインデックス化、データマイニング、ログファイル分析などのビックデータタスクを実行できます。","caption":"マネージド型 Hadoop フレームワーク","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"es","category":"analytics","label":"Elasticsearch Service","filename":"icon_amazon_elastic_search_service.png","description":"Amazon Elasticsearch Service は、人気あるオープンソース検索、分析エンジンである Elasticsearch のデプロイ、運用、スケーリングを簡単にするマネージド型サービスです。","caption":"Elasticsearch クラスターの実行とスケーリング","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"ki","category":"analytics","label":"Kinesis","filename":"icon_amazon_kinesis.png","description":"Amazon Kinesis サービスにより、AWS クラウドで管理されるデータのストリーミングをリアルタイムで容易に行えるようになります。","caption":"リアルタイムストリーミングデータとの連携","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"ml","category":"analytics","label":"Machine Learning","filename":"icon_amazon_machine_learning.png","description":"Amazon Machine Learning は、スマートアプリケーションを簡単に構築することを可能にするサービスです。","caption":"すばやく簡単にスマートアプリケーションを構築","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"wkm","category":"applications","label":"WorkMail","filename":"icon_amazon_work_mail.png","description":"Amazon WorkMail は、強力なセキュリティ管理や既存のデスクトップとモバイルクライアントのサポートを行う管理型 Eメールと予定表のサービスです。","caption":"セキュリティ保護された E メールとカレンダーサービス","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"wks","category":"applications","label":"WorkSpaces","filename":"icon_amazon_work_spaces.png","description":"Amazon WorkSpaces は、クラウドでの完全マネージド型のデスクトップコンピューティングサービスです。","caption":"クラウド内のデスクトップ","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"z","category":"applications","label":"WorkDocs","filename":"icon_amazon_work_docs.png","description":"Amazon WorkDocs は、完全マネージド型のセキュアなエンタープライズストレージおよび共有サービスであり、ユーザーの生産性を高める強力な管理制御とフィードバック機能を備えています。","caption":"セキュアなエンタープライズ向けストレージおよび共有サービス","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"ag","category":"appservices","label":"API Gateway","filename":"icon_amazon_api_gateway.png","description":"Amazon API Gateway により、規模を問わず API を作成、維持、監視、安全性の確保が容易になります。","caption":"API の構築、発行、および管理","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"aps","category":"appservices","label":"AppStream","filename":"icon_amazon_app_stream.png","description":"Amazon AppStream を使用すると、リソースを多く消費するアプリケーションやゲームを、クラウドから複数のエンドユーザーのデバイスにストリーミングすることができます。","caption":"低レイテンシーのアプリケーションストリーミング","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"cs","category":"appservices","label":"CloudSearch","filename":"icon_amazon_cloud_search.png","description":"AWS CloudSearch は、ウェブサイトおよびアプリケーション向けに完全に管理された検索サービスです。","caption":"マネージド型検索サービス","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"ets","category":"appservices","label":"Elastic Transcoder","filename":"icon_amazon_elastic_transcoder.png","description":"Amazon Elastic Transcoder を使用すると、クラウド内のメディアファイルを簡単に、低コストで、大規模に変換できます。","caption":"使いやすいスケーラブルなメディア変換サービス","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"ses","category":"appservices","label":"SES","filename":"icon_amazon_ses.png","description":"Amazon Simple Email Service (SES) は、E メール送受信サービスを可能にします。","caption":"E メール送受信サービス","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"sqs","category":"appservices","label":"SQS","filename":"icon_amazon_sqs.png","description":"Amazon Simple Queue Service (SQS) には、信頼性が高く、拡張性に優れたホストキューが用意されており、このキューにメッセージが格納されます。","caption":"メッセージキューサービス","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"swf","category":"appservices","label":"SWF","filename":"icon_amazon_swf.png","description":"Amazon Simple Workflow (SWF) は、アプリケーション内のすべての処理手順を調整します。","caption":"アプリケーションコンポーネントを連携させるワークフローサービス","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"ec2","category":"compute","label":"EC2","filename":"icon_amazon_ec2.png","description":"Elastic Compute Cloud (EC2) は、クラウド内でサイズ変更可能なコンピューティング容量を提供します。","caption":"クラウド内の仮想サーバー","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"ecs","category":"compute","label":"EC2 Container Service","filename":"icon_amazon_ecs.png","description":"Amazon ECS は、Amazon EC2 インスタンスのクラスター全体に、簡単に Docker コンテナを実行し管理することを可能にします。","caption":"Docker コンテナの実行と管理","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"eb","category":"compute","label":"Elastic Beanstalk","filename":"icon_aws_elastic_beanstalk.png","description":"AWS Elastic Beanstalk は、アプリケーションをデプロイおよび管理するためのアプリケーションコンテナです。","caption":"ウェブアプリの実行と管理","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"lam","category":"compute","label":"Lambda","filename":"icon_aws_lambda.png","description":"AWS Lambda は、イベントに応じてお客様のコードを実行し、お客様に代わってコンピューティングリソースを管理するコンピューティングサービスです。","caption":"サーバーレスでコードを実行","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"dms","category":"database","label":"DMS","filename":"icon_aws_database_migration_service.png","description":"AWS Database Migration Service (DMS) は、データベースを簡単、安全、かつ最小限のダウンタイムでクラウドに移行できるようサポートします。","caption":"マネージドデータベースマイグレーションサービス","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"ddb","category":"database","label":"DynamoDB","filename":"icon_amazon_dynamo_db.png","description":"Amazon DynamoDB は、高可用性を得るために分散したデータのレプリカを管理するスケーラブルな NoSQL データストアです。","caption":"マネージド NoSQL データベース","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"elc","category":"database","label":"ElastiCache","filename":"icon_amazon_elastic_cache.png","description":"Amazon ElastiCache では、インメモリキャッシュシステムから情報を取得するため、アプリケーションのパフォーマンスが向上します。","caption":"インメモリキャッシュ","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"rds","category":"database","label":"RDS","filename":"icon_amazon_rds.png","description":"Amazon Relational Database Service (RDS) を使用すると、クラウド上でリレーショナルデータベースを簡単にセットアップ、運用、スケーリングできます。","caption":"マネージド型リレーショナルデータベースサービス","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"rs","category":"database","label":"Redshift","filename":"icon_amazon_redshift.png","description":"Amazon Redshift は、すべてのデータを既存のビジネスインテリジェンスツールで分析することができる費用対効果の高い、高速、完全マネージド型、ペタバイト規模のデータウェアハウスです。","caption":"高速、シンプル、費用対効果の高いデータウェアハウス","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"cc","category":"developer_tools","label":"CodeCommit","filename":"icon_aws_code_commit.png","description":"AWS CodeCommit は、プライベート Git リポジトリをホストする、スケーラブル性の高いマネージド型のソースコントロールサービスです。","caption":"プライベート Git リポジトリ内のコードの保存","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"cd","category":"developer_tools","label":"CodeDeploy","filename":"icon_aws_code_deploy.png","description":"AWS CodeDeploy は、コードのデプロイを完全に自動化します。","caption":"コードデプロイの自動化","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"cp","category":"developer_tools","label":"CodePipeline","filename":"icon_aws_code_pipeline.png","description":"AWS CodePipeline はソフトウェアのリリースに必要なステップのモデル化、視覚化、および自動化を可能にする、継続的な配信サービスです。","caption":"継続的な配信を使用したソフトウェアのリリース","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"gal","category":"gamedev","label":"GameLift","filename":"icon_amazon_game_lift.png","description":"セッションベースのマルチプレイヤーゲームを、前払いなしで、瞬時にデプロイおよびスケーリングします。","caption":"セッションベースのマルチプレイヤーゲームをデプロイおよびスケーリング","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"iot","category":"internet_of_things","label":"AWS IoT","filename":"icon_aws_iot.png","description":"AWS IoT は、接続されているデバイスが安全かつ簡単に他のクラウドアプリケーションやデバイスとやり取りできるようにするマネージド型クラウドサービスです。","caption":"デバイスをクラウドに接続","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"sc","category":"management_tools","label":"Service Catalog","filename":"icon_aws_service_catalog.png","description":"AWS Service Catalog は組織の IT リソースの承認カタログ管理を可能にし、個人用設定されたポータルを通して社員へ提供します。","caption":"標準化された製品の作成と使用","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"cfo","category":"management_tools","label":"CloudFormation","filename":"icon_aws_cloud_formation.png","description":"AWS CloudFormation を使用すると、予測可能な方法で関連する AWS リソースのコレクションを作成および更新できます。","caption":"テンプレートによるリソースの作成と管理","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"ctr","category":"management_tools","label":"CloudTrail","filename":"icon_aws_cloud_trail.png","description":"AWS CloudTrail によって、アカウントに対して行われた API 呼び出しが記録されるので、ユーザーアクティビティの可視性が向上します。","caption":"ユーザーアクティビティと API の使用状況のトラッキング","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"cw","category":"management_tools","label":"CloudWatch","filename":"icon_amazon_cloud_watch.png","description":"Amazon CloudWatch は、リソースおよびアプリケーションをモニタリングします。","caption":"リソースとアプリケーションのモニタリング","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"cfg","category":"management_tools","label":"Config","filename":"icon_aws_config.png","description":"AWS Config は、お使いの AWS リソースのインベントリ管理やリソース設定履歴の監査、そしてリソース設定に変更があった際の告知を行います。","caption":"リソースのインベントリーと変更のトラッキング","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"ops","category":"management_tools","label":"OpsWorks","filename":"icon_aws_ops_works.png","description":"AWS OpsWorks は、その規模の大小や複雑さに関係なく、アプリケーションを AWS クラウドで管理するための DevOps プラットフォームです。","caption":"Chef を用いたオペレーションの自動化","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"ta","category":"management_tools","label":"Trusted Advisor","filename":"icon_aws_trusted_advisor.png","description":"AWS Trusted Advisor は、お客様の AWS 環境を検査し、コスト削減、システムパフォーマンスおよび信頼性の向上、セキュリティギャップの封鎖につながる可能性を見つけます。","caption":"パフォーマンスとセキュリティの最適化","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"c","category":"mobileservices","label":"Cognito","filename":"icon_amazon_cognito.png","description":"Amazon Cognito はユーザー ID およびデータ同期に関する機能を提供するシンプルなサービスで、モバイルデバイス間でユーザーのアプリケーションデータを安全に管理また同期するのに役立ちます。","caption":"ユーザー ID およびアプリケーションデータの同期","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"df","category":"mobileservices","label":"Device Farm","filename":"icon_aws_device_farm.png","description":"AWS Device Farm により AWS クラウド上で実際のデバイスを使った自動および手動テストを実施し、Android、iOS およびウェブアプリケーションの品質を向上させることができます。","caption":"クラウド上の実際のデバイスを使った Android、iOS およびウェブアプリケーションのテスト","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"a","category":"mobileservices","label":"Mobile Analytics","filename":"icon_amazon_mobile_analytics.png","description":"Amazon Mobile Analytics は、アプリケーションの使用状況データを大規模に収集して視覚化し、開発者が簡単に把握できるようにするサービスです。","caption":"アプリケーション分析の収集、表示、エクスポート","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"mh","category":"mobileservices","label":"Mobile Hub","filename":"icon_aws_mobile_hub.png","description":"AWS Mobile Hub を利用すると、モバイルアプリの構築、テスト、および使用状況に関するモニタリングを簡単に行えるようになります。","caption":"モバイルアプリの構築、テスト、モニタリング","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"sns","category":"mobileservices","label":"SNS","filename":"icon_amazon_sns.png","description":"Amazon Simple Notification Service (SNS) を使用すると、受信者または他のアプリケーションにメッセージを発行できます。","caption":"プッシュ通知サービス","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"dc","category":"networking","label":"Direct Connect","filename":"icon_aws_direct_connect.png","description":"AWS Direct Connect を使用すると、自身のネットワークから AWS への専用線接続を確立できます。","caption":"AWS への専用線接続","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"r53","category":"networking","label":"Route 53","filename":"icon_amazon_route53.png","description":"Amazon Route 53 は、拡張性のある高可用性のドメイン名システム (DNS) と、ドメイン名登録サービスです。","caption":"スケーラブルな DNS とドメインネーム登録","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"vpc","category":"networking","label":"VPC","filename":"icon_amazon_vpc.png","description":"Amazon Virtual Private Cloud (VPC) を使用すると、プライベートの独立したクラウドで AWS リソースを起動できます。","caption":"独立したクラウドリソース","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"acm","category":"security_and_identity","label":"Certificate Manager","filename":"icon_acm.png","description":"AWS Certificate Manager は、Secure Sockets Layer/Transport Layer Security (SSL/TLS) の証明書のプロビジョニング、管理、デプロイを AWS サービスにおいて簡単に提供することができます。","caption":"SSL/TLS の証明書のプロビジョニング、管理、およびデプロイ","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"ds","category":"security_and_identity","label":"Directory Service","filename":"icon_aws_directory_service.png","description":"AWS Directory Service は、クラウド内で管理されるディレクトリを提供します。","caption":"アクティブディレクトリのホストと管理","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"iam","category":"security_and_identity","label":"IAM","filename":"icon_aws_iam.png","description":"AWS Identity and Access Management (IAM) を使用すると、AWS サービスおよびリソースへのアクセスを安全に制御することができます。","caption":"ユーザーアクセスと暗号化キーの管理","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"ins","category":"security_and_identity","label":"Inspector","filename":"icon_amazon_inspector.png","description":"アプリケーションのセキュリティの分析","caption":"アプリケーションのセキュリティの分析","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"waf","category":"security_and_identity","label":"WAF","filename":"icon_aws_waf.png","description":"AWS WAF (Web Application Firewall) は、ウェブトラフィックフィルタリングを提供することにより、SQL インジェクションなどの一般的なウェブ悪用の攻撃からウェブアプリケーションを保護します。","caption":"悪意あるウェブトラフィックのフィルター","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"cfr","category":"storage","label":"CloudFront","filename":"icon_amazon_cloud_front.png","description":"Amazon CloudFront を使用すると、低レイテンシーかつ速いデータ転送速度で、エンドユーザーにコンテンツを配信できます。","caption":"グローバルなコンテンツ配信ネットワーク","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"efs","category":"storage","label":"Elastic File System","filename":"icon_amazon_efs.png","description":"Amazon Elastic File System (Amazon EFS) は、Amazon Elastic Compute Cloud (Amazon EC2) インスタンスのファイルストレージサービスです。","caption":"EC2 向け完全マネージド型ファイルシステム","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"gl","category":"storage","label":"Glacier","filename":"icon_amazon_glacier.png","description":"Amazon Glacier は、低コストのストレージサービスで、データのアーカイブやバックアップ向けに安全かつ堅牢なストレージを提供します。","caption":"クラウド内のアーカイブストレージ","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"imex","category":"storage","label":"Snowball","filename":"icon_aws_snowball.png","description":"AWS Snowball により、転送用のセキュアアプライアンスを用いて、AWS 内外への大容量データの転送を高速化できます。","caption":"大容量データの転送","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"s3","category":"storage","label":"S3","filename":"icon_amazon_s3.png","description":"Amazon Simple Storage Service (S3) を使用すると、大量のデータを保存および取得できます。","caption":"スケーラブルなクラウドストレージ","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+
+{"serviceId":"sg","category":"storage","label":"Storage Gateway","filename":"icon_aws_storage_gateway.png","description":"AWS Storage Gateway を使用すると、オンプレミスの IT 環境と、バックアップおよび障害復旧用のクラウドストレージを安全に統合できます。","caption":"ハイブリッドストレージの統合","userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"}
+]

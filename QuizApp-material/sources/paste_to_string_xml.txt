@@ -1,0 +1,6 @@
+//================================================
+// これらをコピペしてください
+//================================================
+
+<string name="download_queue_provider_authority">com.amazonaws.mobile.downloader-jp.aomori.jaws_ug.quizapp</string>
+<string name="content_file_provider_authority">jp.aomori.jaws_ug.quizapp.fileprovider</string>
