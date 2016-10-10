@@ -1,0 +1,42 @@
+{
+ "count": 4,
+ "sentence": "このアイコンが示すサービスは？",
+ "questions": [
+    {
+        "serviceId":"lam",
+        "category":"compute",
+        "label":"Lambda",
+        "filename":"icon_aws_lambda.png",
+        "description":"AWS Lambda は、イベントに応じてお客様のコードを実行し、お客様に代わってコンピューティングリソースを管理するコンピューティングサービスです。",
+        "caption":"サーバーレスでコードを実行",
+        "userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"
+    },
+    {
+        "serviceId":"s3",
+        "category":"storage",
+        "label":"S3",
+        "filename":"icon_amazon_s3.png",
+        "description":"Amazon Simple Storage Service (S3) を使用すると、大量のデータを保存および取得できます。",
+        "caption":"スケーラブルなクラウドストレージ",
+        "userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"
+    },
+    {
+        "serviceId":"ec2",
+        "category":"compute",
+        "label":"EC2",
+        "filename":"icon_amazon_ec2.png",
+        "description":"Elastic Compute Cloud (EC2) は、クラウド内でサイズ変更可能なコンピューティング容量を提供します。",
+        "caption":"クラウド内の仮想サーバー",
+        "userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"
+    },
+    {
+        "serviceId":"ddb",
+        "category":"database",
+        "label":"DynamoDB",
+        "filename":"icon_amazon_dynamo_db.png",
+        "description":"Amazon DynamoDB は、高可用性を得るために分散したデータのレプリカを管理するスケーラブルな NoSQL データストアです。",
+        "caption":"マネージド NoSQL データベース",
+        "userId":"us-east-1:d1e75ae4-d890-4793-a997-423e9bef659d"
+    }
+ ]
+}
