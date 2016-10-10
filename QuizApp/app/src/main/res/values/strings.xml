@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">AWS Quiz</string>
+
+    <!-- BEGIN - APP CONTENT DELIVERY AND USER DATA STORAGE -->
+
+    <!-- END - APP CONTENT DELIVERY AND USER DATA STORAGE -->
+
+    <!-- TopActivity -->
+    <string name="top_text_title">AWSクイズ</string>
+    <string name="top_btn_start">START</string>
+
+    <!-- QuizActivity -->
+    <string name="quiz_text_question_first">問題</string>
+    <string name="quiz_text_question">問題%1$d / %2$d</string>
+
+    <string name="dialog_text_loading_title">通信中</string>
+    <string name="dialog_text_loading_message">しばらくお待ちください</string>
+
+    <string name="dialog_text_load_error_title">取得エラー</string>
+    <string name="dialog_text_load_error_message">問題を再取得します</string>
+
+    <string name="dialog_btn_ok">OK</string>
+    <string name="dialog_btn_end">終了する</string>
+    <string name="dialog_btn_retry">リトライ</string>
+
+    <string name="dialog_text_correct_title">正解！</string>
+    <string name="dialog_text_correct_message">すごい！</string>
+
+    <string name="dialog_text_incorrect_title">不正解</string>
+    <string name="dialog_text_incorrect_message">正解は %1$s でした。</string>
+
+    <!-- ResultActivity -->
+    <string name="result_text_score">%1$d 問正解でした！</string>
+    <string name="result_btn_goto_top">トップへ戻る</string>
+</resources>
