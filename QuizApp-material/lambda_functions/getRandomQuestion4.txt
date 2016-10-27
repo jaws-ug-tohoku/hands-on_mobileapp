@@ -8,7 +8,7 @@ const dynamo = new doc.DynamoDB();
 exports.handler = (event, context, callback) => {
     // console.log('Received event:', JSON.stringify(event, null, 2));
 
-    const payload = {"TableName": "jawsugaomori-mobilehub-2130611851-Services"};
+    const payload = {"TableName": "jawsugaomori-mobilehub-xxxxxxxxxx-Services"};    // 作成したテーブルの名前に変更してください
 
     var result = {};
 
